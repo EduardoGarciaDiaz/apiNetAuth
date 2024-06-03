@@ -1,0 +1,94 @@
+GET http://localhost:3000/api/peliculas
+
+###
+
+GET http://localhost:3000/api/peliculas?s=Dun
+
+###
+
+GET http://localhost:3000/api/peliculas/19
+
+###
+
+POST http://localhost:3000/api/peliculas
+Content-Type: application/json
+
+{
+    "titulo": "Película de prueba",
+    "sinopsis": "Sinopsis de prueba.",
+    "anio": 2024
+}
+
+###
+
+PUT http://localhost:3000/api/peliculas/16
+Content-Type: application/json
+
+{
+    "peliculaid": 16,
+    "titulo": "Paw Patrol: La Súper Película",
+    "sinopsis": "Un meteorito mágico aterriza en Adventure City y otorga superpoderes a los cachorros de PAW Patrol, convirtiéndolos en The Mighty Pups.",
+    "anio": 2024,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMGI4NTNlODItMGJlZi00OTIwLTlkM2ItMWFkZjJhZDIzMDc3XkEyXkFqcGdeQXVyMTEyNzQ1MTk0._V1_SX300.jpg"
+}
+
+###
+
+POST http://localhost:3000/api/peliculas/19/categoria
+Content-Type: application/json
+
+{
+    "categoriaid": "2"
+}
+
+###
+
+DELETE http://localhost:3000/api/peliculas/19/categoria
+Content-Type: application/json
+
+{
+    "categoriaid": "1"
+}
+
+###
+
+DELETE http://localhost:3000/api/peliculas/16
+
+###
+
+POST http://localhost:3000/api/peliculas
+Content-Type: application/json
+
+{
+    "titulo": "Los Juegos del Hambre",
+    "sinopsis": "Cada año, en las ruinas de lo que en su día fue Norteamérica, el Capitolio de la nación de Panem obliga a cada uno de sus doce distritos a enviar un chico o chica adolescente a competir en los Juegos del Hambre. Los Juegos del Hambre, un retorcido castigo por un levantamiento que tuvo lugar en el pasado y una táctica de intimidación gubernamental continuada, son un acontecimiento retransmitido por televisión en todo el país en el que los Tributos deben luchar entre sí hasta que sólo quede un superviviente. Katniss Everdeen, de dieciséis años de edad, se presenta como voluntaria en lugar de su hermana para participar en los juegos, y se ve obligada a confiar en su aguzado instinto, así como en los consejos de un antiguo vencedor borracho, Haymitch Abernathy, cuando termina enfrentada a otros Tributos que han sido objeto de un entrenamiento intensivo y que se han estado preparando para estos Juegos durante toda su vida. Si quiere volver a su casa en el Distrito 12, Katniss deberá tomar decisiones imposibles en la arena en las que tendrá que contraponer la supervivencia a la humanidad, y la vida al amor.",
+    "anio": 2012,
+    "poster": "https://es.web.img3.acsta.net/medias/nmedia/18/85/41/16/19787199.jpg",
+    "categorias": [1]
+}
+
+###
+
+POST http://localhost:3000/api/peliculas
+Content-Type: application/json
+
+{
+    "titulo": "El Fabricante de Lagrimas",
+    "sinopsis": "Nica, es una adolescente de 17 años que ha vivido toda su vida en el orfanato Grave, esperando ser adoptada, hasta que finalmente, su sueño se vuelve realidad cuando los Srs. Milligan deciden llevarla a su casa para convertirla en un miembro más de su familia. Sin embargo, su nueva vida no será como se lo esperaba, dado que también eligen adoptar a Rigel, un chico misterioso y conflictivo que parece odiarla. A medida que Nica y Rigel intentan encontrar su lugar con su nueva familia, descubren que comparten un pasado doloroso, por lo que ambos aprenden a sobrellevar su sufrimiento cuando se ven envueltos en los oscuros secretos del orfanato, incluida la antigua leyenda del fabricante de lágrimas, un enigmático artesano que crea todos los miedos y ansiedades en el corazón de todos los seres humanos en el mundo. Ahora Nica y Rigel, deben unir fuerzas para enfrentar sus propios temores y desafíos, a medida que superan su pasado para encontrar la felicidad que tanto han anhelado juntos en su nuevo hogar.",
+    "anio": 2024,
+    "poster": "https://mx.web.img3.acsta.net/c_310_420/pictures/24/02/28/21/21/4034390.jpg",
+    "categorias": [8, 15]
+}
+
+###
+
+POST http://localhost:3000/api/peliculas
+Content-Type: application/json
+
+{
+    "titulo": "Las Hermanas Bolena",
+    "sinopsis": "Basada en la novela superventas de Philippa Gregory, Las hermanas Bolena es un absorbente retrato lleno de sensualidad, intriga, romance y traición que transcurre ante el telón de fondo de un momento crucial de la historia. El padre y el tío de las dos hermanas Bolena, Ana (Natalie Portman) y María (Scarlett Johansson), empujados por el ambicioso deseo de mejorar el nivel social y el poder de la familia, convencen a sus hijas para que conquisten el afecto del Rey de Inglaterra (Eric Bana). Las jóvenes dejan atrás su vida en el campo para trasladarse al peligroso y apasionante mundo de la corte. Pero las buenas intenciones de las hermanas al querer ayudar a su familia se convierten pronto en una rivalidad sin cuartel para obtener el amor del Rey. En un principio, gana María, a la que el Rey escoge como amante y con la que tiene un bastardo. Pero Ana es inteligente, astuta, no teme a nada, y consigue apartar a su hermana y a la legítima esposa del Rey, la reina Catalina de Aragón. Ana no se detendrá hasta ser coronada Reina de Inglaterra. Mientras las hermanas Bolena luchan por los favores del Rey, una por amor, otra por ambición, Inglaterra es presa de luchas internas. A pesar de las dramáticas consecuencias de sus pretensiones, las dos hermanas acaban por apoyarse mutuamente, unidas por su lazo de sangre.",
+    "anio": 2008,
+    "poster": "https://image.tmdb.org/t/p/w154/eLU4zvrXkHwgfzlD0N8rlYZ19mG.jpg",
+    "categorias": [8, 15]
+}
